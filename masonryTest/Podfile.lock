@@ -1,0 +1,20 @@
+PODS:
+  - JSPatch (0.1.5):
+    - JSPatch/Core (= 0.1.5)
+  - JSPatch/Core (0.1.5)
+  - Masonry (0.6.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+
+DEPENDENCIES:
+  - JSPatch
+  - Masonry
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+
+COCOAPODS: 0.38.2
