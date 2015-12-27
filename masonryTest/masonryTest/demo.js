@@ -1,4 +1,4 @@
-require('UIView, UIColor, UILabel,TableViewCell')
+require('UIView, UIColor, UILabel,TableViewCell,NSString')
 
     defineClass('TableViewCell', {
                 updateWithData:function(data){
@@ -60,8 +60,6 @@ require('UIView, UIColor, UILabel,TableViewCell')
                     self.setTitle("测试");
                 }
     })
-
-
             //关于变量 set get
 
     defineClass('ViewController',{
@@ -81,6 +79,36 @@ require('UIView, UIColor, UILabel,TableViewCell')
 
         //struct
 
+
+
+
+        /**
+         *  修改系统方法 setter
+         */
+    defineClass('NSDateFormatter',{
+               
+//                dateFormat: function() {
+//                    if (!__dateFormat) {
+//                        __dateFormat = "";
+//                    } else {
+//                        if (__dateFormat.containsString("YYYY")) {
+//                            __dateFormat = __dateFormat.substringFromIndex(4);
+//                            __dateFormat = "yyyy".stringByAppendingString(__dateFormat);
+//                        }
+//                    }
+//                    return __dateFormat;
+//                }
+                
+                setDateFormat:function(newDateFormat){
+                
+                if (newDateFormat.containsString("YYYY")) {
+                    var str = 'yyyy';
+                    var s = newDateFormat.substringFromIndex(4);
+                    var str2=str+s.toJS();
+                    self.ORIGsetDateFormat(str2);
+                }
+            }
+    })
     
 
 

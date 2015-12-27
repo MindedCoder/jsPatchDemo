@@ -34,6 +34,13 @@
     }];
 
     
+    NSDateFormatter *format =[[NSDateFormatter alloc]init];
+    [format setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSDate *date =[NSDate dateWithTimeIntervalSince1970:1451145600];
+    NSString *currentDateStr = [format stringFromDate:date];
+
+    NSLog(@"date is --------%@",currentDateStr);
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -67,5 +74,7 @@
         _dataArray = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",nil];
     }
     return _dataArray;
+    
+
 }
 @end
